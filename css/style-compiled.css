@@ -1,0 +1,320 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Noto+Serif:400,700&display=swap&subset=cyrillic");
+.intro {
+  position: absolute;
+}
+
+header {
+  width: 100%;
+  background-color: #7f0000;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+header img {
+  margin: 15px;
+  margin-left: 20px;
+  width: 25px;
+}
+header button {
+  background-color: transparent;
+  border: none;
+}
+header button:focus {
+  border: none;
+  outline: none;
+}
+
+.headerForm {
+  margin-left: auto;
+  margin-right: 20px;
+  width: 20%;
+}
+
+.search_bar-input {
+  width: 90%;
+  height: 35px;
+  border-radius: 6px;
+  border: solid 0.5px lightgrey;
+}
+.search_bar-input::-webkit-input-placeholder {
+  color: lightgrey;
+  padding-left: 5px;
+}
+.search_bar-input:focus {
+  outline: none;
+  border: solid 1.5px #1e88e5;
+}
+.search_bar-input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.menu_block {
+  height: 91.85%;
+  min-width: 260px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  background-color: #7f0000;
+  z-index: 100;
+  transition: 0.5s;
+  transform: translateX(-100%);
+}
+
+.menu_block_active {
+  transform: translateX(0%);
+}
+
+.menu_block_inactive {
+  transform: translateX(-100%);
+}
+
+.drop_menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  height: 50%;
+  z-index: 100;
+  padding-top: 10px;
+}
+.drop_menu a {
+  color: white;
+  font-size: 21px;
+}
+.drop_menu li {
+  padding: 20px 65px 20px 55px;
+}
+.drop_menu li:hover {
+  background-color: #fff3e0;
+  font-weight: 700;
+}
+.drop_menu li:hover a {
+  outline: none;
+  color: #7f0000;
+}
+
+.img_for_drop_menu:hover {
+  cursor: pointer;
+}
+.img_for_drop_menu:hover .drop_menu {
+  display: block;
+}
+
+.carousel-inner {
+  height: 640px;
+}
+
+.intro__text {
+  font-size: 50px;
+  font-weight: 700;
+  text-align: left;
+  padding: 70px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+  color: #fff8e1;
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 100px;
+}
+
+.carousel-control-icon {
+  background-image: url("../images/move-to-next.svg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+}
+
+.carousel-control-prev-icon {
+  transform: rotate(180deg);
+  margin-left: -60px;
+}
+
+.carousel-control-next-icon {
+  margin-left: 60px;
+}
+
+.move_down {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  left: 47%;
+  transition: 0.4s;
+}
+.move_down:focus {
+  outline: none;
+}
+.move_down:hover {
+  transition: 0.4s;
+  transform: translateY(-8px);
+  cursor: pointer;
+}
+
+.content {
+  position: absolute;
+  top: 750px;
+  width: 100%;
+}
+
+.wrapper {
+  width: 55%;
+  margin: 0 auto;
+}
+
+.mainSearchForm {
+  display: flex;
+  align-items: center;
+}
+
+.mainInput {
+  width: 100%;
+  height: 50px;
+  border-radius: 6px;
+  border: solid 0.5px lightgrey;
+}
+.mainInput::-webkit-input-placeholder {
+  color: lightgrey;
+  padding-left: 5px;
+}
+.mainInput:focus {
+  outline: none;
+  transition: 0.3s;
+  border: solid 1.5px #1e88e5;
+}
+.mainInput:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.search__results {
+  height: 550px;
+  margin: 15px 0;
+}
+
+.searchByMap {
+  width: 100%;
+}
+
+.map_container {
+  background-image: url("../images/wine-bottles1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding: 2px;
+}
+.map_container a:hover {
+  text-decoration: none;
+  color: #7f0000;
+  font-weight: bold;
+  transition: 0.5s;
+}
+
+.map_container_nameBlock {
+  display: inline-block;
+  position: absolute;
+}
+
+.map_text {
+  color: white;
+  font-size: 18px;
+  margin-bottom: 0;
+}
+
+.piedmont {
+  top: 80px;
+  left: 100px;
+}
+
+.venice {
+  top: 50px;
+  left: 250px;
+}
+
+.lombardy {
+  top: 100px;
+  left: 175px;
+}
+
+.marche {
+  top: 180px;
+  left: 270px;
+}
+
+.campania {
+  top: 300px;
+  left: 330px;
+}
+
+.burgundy {
+  top: 225px;
+  left: 810px;
+}
+
+.provence {
+  top: 405px;
+  left: 880px;
+}
+
+.champagne {
+  top: 135px;
+  left: 830px;
+}
+
+.loire_valley {
+  top: 185px;
+  left: 680px;
+}
+
+.bordeaux {
+  top: 355px;
+  left: 650px;
+}
+
+.сatalonia {
+  top: 175px;
+  left: 1405px;
+}
+
+.valencia {
+  top: 315px;
+  left: 1305px;
+}
+
+.castilla_la_mancha {
+  top: 265px;
+  left: 1235px;
+}
+
+.castilla_leon {
+  top: 145px;
+  left: 1145px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  font-family: "Noto Serif", serif;
+  background-color: #fff8e1;
+}
+
+ul, li {
+  list-style: none;
+}
+ul a, li a {
+  text-decoration: none;
+}
+ul a:hover, li a:hover {
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=style-compiled.css.map */

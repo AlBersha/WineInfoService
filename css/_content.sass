@@ -1,0 +1,35 @@
+.content
+  position: absolute
+  top: 750px
+  width: 100%
+
+.wrapper
+  width: 55%
+  margin: 0 auto
+
+.mainSearchForm
+  display: flex
+  align-items: center
+
+.mainInput
+  //padding-left: 5px
+  width: 100%
+  height: 50px
+  border-radius: 6px
+  border: solid 0.5px lightgrey
+  &::-webkit-input-placeholder
+    color: lightgrey
+    padding-left: 5px
+  &:focus
+    outline: none
+    transition: 0.3s
+    border: solid 1.5px #1e88e5
+  &:focus::-webkit-input-placeholder
+    color: transparent
+
+.search__results
+  height: 550px
+  margin: 15px 0
+
+
+

@@ -1,0 +1,125 @@
+.intro
+  position: absolute
+
+header
+  width: 100%
+  background-color: $darkRed
+  color: white
+  display: flex
+  justify-content: space-between
+  img
+    margin: 15px
+    margin-left: 20px
+    width: 25px
+  button
+    background-color: transparent
+    border: none
+    &:focus
+      border: none
+      outline: none
+
+.headerForm
+  margin-left: auto
+  margin-right: 20px
+  width: 20%
+
+.search_bar-input
+  width: 90%
+  height: 35px
+  border-radius: 6px
+  border: solid 0.5px lightgrey
+  &::-webkit-input-placeholder
+    color: lightgrey
+    padding-left: 5px
+  &:focus
+    outline: none
+    border: solid 1.5px #1e88e5
+  &:focus::-webkit-input-placeholder
+    color: transparent
+
+.menu_block
+  height: 91.85%
+  min-width: 260px
+  position: absolute
+  display: flex
+  justify-content: center
+  background-color: $darkRed
+  z-index: 100
+  transition: 0.5s
+  transform: translateX(-100%)
+
+.menu_block_active
+  transform: translateX(0%)
+
+.menu_block_inactive
+  transform: translateX(-100%)
+
+.drop_menu
+  display: flex
+  justify-content: space-between
+  align-items: center
+  flex-direction: column
+  position: absolute
+  height: 50%
+  z-index: 100
+  padding-top: 10px
+  a
+    color: white
+    font-size: 21px
+  li
+    padding: 20px 65px 20px 55px
+    &:hover
+      background-color: #fff3e0
+      font-weight: 700
+      a
+        outline: none
+        color: $darkRed
+
+.img_for_drop_menu:hover
+  cursor: pointer
+  .drop_menu
+    display: block
+
+.carousel-inner
+  height: 640px
+
+.intro__text
+  font-size: 50px
+  font-weight: 700
+  text-align: left
+  padding: 70px
+  background-color: rgba(0, 0, 0, 0.3)
+  border-radius: 12px
+  color: $beige
+
+.carousel-caption
+  position: absolute
+  top: 100px
+
+.carousel-control-icon
+  background-image: url("../images/move-to-next.svg")
+  background-size: 100%
+  background-position: center
+  background-repeat: no-repeat
+  width: 40px
+  height: 40px
+
+.carousel-control-prev-icon
+  transform: rotate(180deg)
+  margin-left: -60px
+
+.carousel-control-next-icon
+  margin-left: 60px
+
+.move_down
+  background-color: transparent
+  border: none
+  position: absolute
+  left: 47%
+  transition: 0.4s
+  &:focus
+    outline: none
+  &:hover
+    transition: 0.4s
+    transform: translateY(-8px)
+    cursor: pointer
