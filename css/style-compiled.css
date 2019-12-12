@@ -80,19 +80,15 @@ header button:focus {
   padding-top: 10px;
 }
 .drop_menu a {
-  color: white;
   font-size: 24px;
-}
-.drop_menu li {
+  outline: none;
+  color: w;
   width: 300px;
   padding: 15px 35px;
 }
-.drop_menu li:hover {
+.drop_menu a:hover {
   background-color: #fff3e0;
   font-weight: bold;
-}
-.drop_menu li:hover a {
-  outline: none;
   color: #7f0000;
 }
 
@@ -108,8 +104,6 @@ header button:focus {
 }
 
 .intro__text {
-  font-size: 50px;
-  font-weight: 700;
   text-align: left;
   padding: 70px;
   background-color: rgba(0, 0, 0, 0.3);
@@ -121,7 +115,7 @@ header button:focus {
   font-weight: 700;
 }
 .intro__text h3 {
-  font-size: 50px;
+  font-size: 30px;
   font-weight: 700;
 }
 
