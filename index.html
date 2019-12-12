@@ -237,7 +237,7 @@
                 }),
                 success: function (wine) {
                     if(wine.name){
-                        document.getElementsByClassName("alert")[0].style.visibility = "hidden";
+                        //document.getElementsByClassName("alert")[0].style.visibility = "hidden";
                         // document.getElementsByClassName("search__results")[0]
                         document.getElementsByClassName("options")[0].innerHTML = "Variety: ";
                         document.getElementById("name").innerHTML = wine.name;
@@ -280,10 +280,12 @@
                             document.getElementsByClassName("options")[6].innerHTML = "Descripion: ";
                             document.getElementById("description").innerHTML = wine.description;
                         }else{
-                            document.getElementsByClassName("options")[6].innerHTML = "Descripion: ";
-                            document.getElementById("description").innerHTML = wine.description;
+                            document.getElementsByClassName("options")[6].innerHTML = "";
+                            document.getElementById("description").innerHTML = "";
                         }
                     }else{
+                        document.getElementsByClassName("alert")[0].style.visibility = "visible";
+                        document.getElementsByClassName("alert")[0].innerHTML = "There are no element you try to find. Please input another value";
                         document.getElementById("name").innerHTML = "";
                         document.getElementById("country").innerHTML = "";
                         document.getElementById("designation").innerHTML = "";
@@ -291,8 +293,6 @@
                         document.getElementById("region").innerHTML = "";
                         document.getElementById("winery").innerHTML = "";
                         document.getElementById("description").innerHTML = "";
-                        document.getElementsByClassName("alert")[0].style.visibility = "visible";
-                        document.getElementsByClassName("alert")[0].innerHTML = "There are no element you try to find. Please input another value";
                         document.getElementsByClassName("options")[0].innerHTML = "";
                         document.getElementsByClassName("options")[1].innerHTML = "";
                         document.getElementsByClassName("options")[2].innerHTML = "";
