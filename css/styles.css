@@ -3,6 +3,8 @@
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900&display=swap&subset=cyrillic");
 .intro {
   position: absolute;
+}
+.intro ul, .intro li {
   list-style: none;
 }
 .intro a {
@@ -218,6 +220,9 @@ header button:focus {
   visibility: hidden;
 }
 
+.search__results div {
+  margin-left: 15px;
+}
 .search__results ul > li {
   margin: 2px 0;
 }
