@@ -1,12 +1,20 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Noto+Serif:400,700&display=swap&subset=cyrillic");
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900&display=swap&subset=cyrillic");
 .intro {
   position: absolute;
+  list-style: none;
+}
+.intro a {
+  text-decoration: none;
+}
+.intro a:hover {
+  text-decoration: none;
 }
 
 header {
   width: 100%;
-  background-color: #7f0000;
+  background-color: rgba(127, 0, 0, 0.85);
   color: white;
   display: flex;
   justify-content: space-between;
@@ -32,6 +40,7 @@ header button:focus {
 }
 
 .search_bar-input {
+  margin: 10px 95px 0 0;
   width: 90%;
   height: 35px;
   border-radius: 6px;
@@ -50,12 +59,12 @@ header button:focus {
 }
 
 .menu_block {
-  height: 91.85%;
+  height: 91.25%;
   min-width: 300px;
   position: absolute;
   display: flex;
   justify-content: center;
-  background-color: #7f0000;
+  background-color: rgba(127, 0, 0, 0.85);
   z-index: 100;
   transition: 0.5s;
   transform: translateX(-100%);
@@ -71,13 +80,14 @@ header button:focus {
 
 .drop_menu {
   display: flex;
+  padding-top: 40px;
+  min-width: 325px;
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
   position: absolute;
   height: 50%;
   z-index: 100;
-  padding-top: 10px;
 }
 .drop_menu a {
   text-decoration: none;
@@ -85,12 +95,15 @@ header button:focus {
   outline: none;
   color: white;
   width: 300px;
-  padding: 15px 35px;
+  padding: 17px 40px;
+  transition: 0.3s;
 }
 .drop_menu a:hover {
   background-color: #fff3e0;
   font-weight: bold;
   color: #7f0000;
+  transition: 0.3s;
+  font-size: 26px;
 }
 
 .img_for_drop_menu:hover {
@@ -105,8 +118,8 @@ header button:focus {
 }
 
 .intro__text {
-  width: 500px;
-  height: 400px;
+  width: 68vw;
+  height: 47vh;
   text-align: left;
   padding: 70px;
   background-color: rgba(0, 0, 0, 0.3);
@@ -117,12 +130,13 @@ header button:focus {
   font-weight: 700;
 }
 .intro__text h1 {
-  font-size: 50px;
+  font-family: "Noto Serif", serif;
+  font-size: 60px;
   font-weight: 700;
 }
 .intro__text p {
-  margin-top: 35px;
-  font-size: 25px;
+  margin-top: 20px;
+  font-size: 32px;
 }
 
 .carousel-caption {
@@ -152,7 +166,7 @@ header button:focus {
   background-color: transparent;
   border: none;
   position: absolute;
-  left: 47%;
+  left: 47vw;
   transition: 0.4s;
 }
 .move_down:focus {
@@ -166,7 +180,7 @@ header button:focus {
 
 .content {
   position: absolute;
-  top: 750px;
+  top: 102vh;
   width: 100%;
 }
 
@@ -181,6 +195,7 @@ header button:focus {
 }
 
 .mainInput {
+  font-size: 23px;
   width: 100%;
   height: 50px;
   border-radius: 6px;
@@ -199,9 +214,17 @@ header button:focus {
   color: transparent;
 }
 
-.search__results {
-  height: 550px;
-  margin: 15px 0;
+.alert {
+  visibility: hidden;
+}
+
+.search__results ul > li {
+  margin: 2px 0;
+}
+
+.options {
+  display: inline-block;
+  font-weight: bold;
 }
 
 .searchByMap {
@@ -312,18 +335,9 @@ body {
   margin: 0;
   padding: 0;
   position: relative;
-  font-family: "Noto Serif", serif;
-  background-color: #fff8e1;
-}
-
-ul, li {
-  list-style: none;
-}
-ul a, li a {
-  text-decoration: none;
-}
-ul a:hover, li a:hover {
-  text-decoration: none;
+  font-family: "Playfair Display", serif;
+  font-size: 23px;
+  background-color: rgba(255, 248, 225, 0.7);
 }
 
 /*# sourceMappingURL=styles.css.map */

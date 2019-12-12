@@ -1,9 +1,15 @@
 .intro
   position: absolute
+  ul, li
+  list-style: none
+  a
+    text-decoration: none
+    &:hover
+      text-decoration: none
 
 header
   width: 100%
-  background-color: $darkRed
+  background-color: rgba(127, 0, 0, 0.85)
   color: white
   display: flex
   justify-content: space-between
@@ -24,6 +30,7 @@ header
   width: 20%
 
 .search_bar-input
+  margin: 10px 95px 0 0
   width: 90%
   height: 35px
   border-radius: 6px
@@ -38,12 +45,12 @@ header
     color: transparent
 
 .menu_block
-  height: 91.85%
+  height: 91.25%
   min-width: 300px
   position: absolute
   display: flex
   justify-content: center
-  background-color: $darkRed
+  background-color: rgba(127, 0, 0, 0.85)
   z-index: 100
   transition: 0.5s
   transform: translateX(-100%)
@@ -56,24 +63,28 @@ header
 
 .drop_menu
   display: flex
+  padding-top: 40px
+  min-width: 325px
   justify-content: space-between
   align-items: center
   flex-direction: column
   position: absolute
   height: 50%
   z-index: 100
-  padding-top: 10px
   a
     text-decoration: none
     font-size: 24px
     outline: none
     color: white
     width: 300px
-    padding: 15px 35px
+    padding: 17px 40px
+    transition: 0.3s
     &:hover
       background-color: #fff3e0
       font-weight: bold
       color: $darkRed
+      transition: 0.3s
+      font-size: 26px
 
 
 .img_for_drop_menu:hover
@@ -85,10 +96,8 @@ header
   height: 640px
 
 .intro__text
-  width: 500px
-  height: 400px
-  //font-size: 50px
-  //font-weight: 700
+  width: 68vw
+  height: 47vh
   text-align: left
   padding: 70px
   background-color: rgba(0, 0, 0, 0.3)
@@ -98,11 +107,12 @@ header
   font-size: 30px
   font-weight: 700
   h1
-    font-size: 50px
+    font-family: 'Noto Serif', serif
+    font-size: 60px
     font-weight: 700
   p
-    margin-top: 35px
-    font-size: 25px
+    margin-top: 20px
+    font-size: 32px
 
 .carousel-caption
   position: absolute
@@ -127,7 +137,7 @@ header
   background-color: transparent
   border: none
   position: absolute
-  left: 47%
+  left: 47vw
   transition: 0.4s
   &:focus
     outline: none

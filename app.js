@@ -6,7 +6,7 @@ const jsonParser = express.json();
 const path = require('path');
 const config = "mongodb+srv://userMax:userMax@cluster0-famxs.gcp.mongodb.net/test?retryWrites=true&w=majority";
 
-mongoose.connect(config || process.env.MONGOLAB_URI, { useCreateIndex: true }, function (err) {
+mongoose.connect(config || process.env.MONGOLAB_URI, { useCreateIndex: true, useNewUrlParser: true, useUnifiedTopology: true }, function (err) {
     if (err) return console.log(err);
     const port = process.env.PORT || 5000;
     app.listen(port);
