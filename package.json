@@ -10,6 +10,6 @@
     "node": "^13.1.0"
   },
   "scripts": {
-    "start": "node send.js"
+    "start": "node app.js"
   }
 }
