@@ -8,5 +8,8 @@
     "mongodb": "^3.3.4",
     "mongoose": "^5.8.0",
     "node": "^13.1.0"
+  },
+  "scripts": {
+    "start": "node send.js"
   }
 }

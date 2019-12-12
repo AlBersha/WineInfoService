@@ -4,7 +4,9 @@ const Schema = mongoose.Schema;
 const app = express();
 const jsonParser = express.json();
 const path = require('path');
-mongoose.connect("mongodb+srv://userMax:userMax@cluster0-famxs.gcp.mongodb.net/test?retryWrites=true&w=majority", { useCreateIndex: true }, function (err) {
+const config = "mongodb+srv://userMax:userMax@cluster0-famxs.gcp.mongodb.net/test?retryWrites=true&w=majority";
+
+mongoose.connect(config || process.env.MONGOLAB_URI, { useCreateIndex: true }, function (err) {
     if (err) return console.log(err);
     const port = process.env.PORT || 5000;
     app.listen(port);
