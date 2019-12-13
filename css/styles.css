@@ -230,6 +230,11 @@ header button:focus {
   margin: 5px 0;
 }
 
+.result-point {
+  display: flex;
+  padding-left: 10px;
+}
+
 .options {
   display: inline-block;
   font-weight: bold;
