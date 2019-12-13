@@ -218,8 +218,7 @@ header button:focus {
 }
 
 .alert {
-  visibility: hidden;
-  padding: 0;
+  padding: 6px;
   margin: 0;
 }
 
@@ -236,8 +235,8 @@ header button:focus {
 }
 
 .options {
-  display: inline-block;
   font-weight: bold;
+  padding-right: 10px;
 }
 
 .searchByMap {
