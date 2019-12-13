@@ -218,12 +218,13 @@ header button:focus {
 }
 
 .alert {
+  visibility: hidden;
   padding: 6px;
   margin: 0;
 }
 
 .search__results {
-  padding-bottom: 180px;
+  padding-bottom: 80px;
 }
 .search__results ul > li {
   margin: 5px 0;
