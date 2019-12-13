@@ -233,6 +233,7 @@ header button:focus {
 .result-point {
   display: flex;
   padding-left: 10px;
+  margin-bottom: 5px;
 }
 
 .options {
