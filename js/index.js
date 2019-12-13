@@ -14,3 +14,7 @@ function closeMenu() {
 function scrollWin() {
     window.scrollTo(0, 600);
 }
+
+$('.carousel').carousel({
+    interval: 1800
+});
