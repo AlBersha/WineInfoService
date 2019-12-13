@@ -93,7 +93,7 @@
 
             </form>
             <div class="search__results viaForm">
-<!--                <span class="alert alert-danger" role="alert"></span>-->
+                <div class="alert alert-danger" role="alert"></div>
                 <span class="options" id="name_field"></span>
                 <div id = "name">
                     <ul>
@@ -237,8 +237,8 @@
                 }),
                 success: function (wine) {
                     if(wine.name){
-                        //document.getElementsByClassName("alert")[0].style.visibility = "hidden";
-                        // document.getElementsByClassName("search__results")[0]
+                        document.getElementsByClassName("alert")[0].style.visibility = "hidden";
+                        document.getElementsByClassName("search__results")[0];
                         document.getElementsByClassName("options")[0].innerHTML = "Variety: ";
                         document.getElementById("name").innerHTML = wine.name;
                         if(wine.country){
