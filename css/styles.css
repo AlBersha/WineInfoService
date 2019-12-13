@@ -116,7 +116,7 @@ header button:focus {
 }
 
 .carousel-inner {
-  height: 640px;
+  height: 84vh;
 }
 
 .intro__text {
@@ -168,6 +168,7 @@ header button:focus {
   background-color: transparent;
   border: none;
   position: absolute;
+  top: 93vh;
   left: 47vw;
   transition: 0.4s;
 }
@@ -218,13 +219,12 @@ header button:focus {
 
 .alert {
   visibility: hidden;
+  padding: 0;
+  margin: 0;
 }
 
 .search__results {
   padding-bottom: 180px;
-}
-.search__results div {
-  margin-left: 15px;
 }
 .search__results ul > li {
   margin: 5px 0;
