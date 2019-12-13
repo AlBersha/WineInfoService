@@ -220,6 +220,9 @@ header button:focus {
   visibility: hidden;
 }
 
+.search__results {
+  padding-bottom: 180px;
+}
 .search__results div {
   margin-left: 15px;
 }
