@@ -183,13 +183,21 @@ header button:focus {
 
 .content {
   position: absolute;
-  top: 102vh;
+  top: 99vh;
   width: 100%;
+}
+
+.b-wrapper {
+  width: 60%;
+  margin: 0 auto;
+  background-color: rgba(255, 248, 225, 0.9);
+  padding: 45px;
 }
 
 .wrapper {
   width: 55%;
   margin: 0 auto;
+  border-radius: 10px;
 }
 
 .mainSearchForm {
@@ -199,7 +207,8 @@ header button:focus {
 
 .mainInput {
   font-size: 23px;
-  width: 100%;
+  width: 90%;
+  margin: 0 auto;
   height: 50px;
   border-radius: 6px;
   border: solid 0.5px lightgrey;
@@ -253,9 +262,12 @@ header button:focus {
   position: relative;
   padding: 2px;
 }
+.map_container a {
+  color: #7f0000;
+}
 .map_container a:hover {
   text-decoration: none;
-  color: #7f0000;
+  font-size: 26px;
   font-weight: bold;
   transition: 0.5s;
 }
@@ -266,9 +278,12 @@ header button:focus {
 }
 
 .map_text {
-  color: white;
+  color: #7f0000;
   font-size: 18px;
   margin-bottom: 0;
+}
+.map_text:hover {
+  font-size: 23px;
 }
 
 .piedmont {
@@ -278,22 +293,17 @@ header button:focus {
 
 .venice {
   top: 50px;
-  left: 250px;
+  left: 220px;
 }
 
-.lombardy {
-  top: 100px;
-  left: 175px;
-}
-
-.marche {
+.tuscany {
   top: 180px;
-  left: 270px;
+  left: 200px;
 }
 
-.campania {
-  top: 300px;
-  left: 330px;
+.northeastern_italy {
+  top: 122px;
+  left: 220px;
 }
 
 .burgundy {
@@ -302,13 +312,13 @@ header button:focus {
 }
 
 .provence {
-  top: 405px;
-  left: 880px;
+  top: 385px;
+  left: 835px;
 }
 
 .champagne {
   top: 135px;
-  left: 830px;
+  left: 810px;
 }
 
 .loire_valley {
@@ -322,8 +332,8 @@ header button:focus {
 }
 
 .сatalonia {
-  top: 175px;
-  left: 1405px;
+  top: 185px;
+  left: 1335px;
 }
 
 .valencia {
@@ -331,14 +341,14 @@ header button:focus {
   left: 1305px;
 }
 
-.castilla_la_mancha {
-  top: 265px;
-  left: 1235px;
+.northern_spain {
+  top: 120px;
+  left: 1120px;
 }
 
-.castilla_leon {
-  top: 145px;
-  left: 1145px;
+.andalucia {
+  top: 320px;
+  left: 1150px;
 }
 
 html {
@@ -352,6 +362,8 @@ body {
   font-family: "Quicksand", sans-serif;
   font-size: 23px;
   background-color: rgba(255, 248, 225, 0.7);
+  background-image: url("../images/фон.png");
+  background-size: 100%;
 }
 
 /*# sourceMappingURL=style-compiled.css.map */

@@ -77,7 +77,7 @@
 
 
     <div class="content" >
-        <div class="wrapper">
+        <div class="wrapper b-wrapper">
             <form name="userForm">
                 <input type="hidden" name="id" value="0" />
                 <div class="form-group">
@@ -132,95 +132,83 @@
             </div>
         </div>
 
-<!--        <div class="searchByMap">-->
-<!--            <div class="map_container">-->
-<!--                <img src="images/italy-map.png" alt="italy-map" usemap="#image-map_italy">-->
-<!--                <map class="italy_map" name="image-map_italy">-->
-<!--                    <div class="map_container_nameBlock piedmont">-->
-<!--                        <a href="" class="map_text">Пьемонт <br> <img class="map_loc_italy" src="images/map-location.svg" alt="map-location" width="15">-->
-<!--                        </a>-->
-<!--                    </div>-->
-<!--                    <area target="" alt="Пьемонт" title="Пьемонт" href="" coords="143,68,144,85,143,100,137,116,131,129,123,143,107,152,95,160,83,160,89,149,75,144,63,135,66,124,71,113,63,103,66,92,79,90,76,81,71,69,76,61,91,61,103,60,117,55,117,44,118,32,127,40,129,51,135,57" shape="poly">-->
-<!--                    <div class="map_container_nameBlock venice">-->
-<!--                        <a href="" class="map_text">Венеция <br> <img class="map_loc_italy" src="images/map-location.svg" alt="map-location" width="15">-->
-<!--                        </a>-->
-<!--                    </div>-->
-<!--                    <area target="" alt="Фриули-Венеция-Джулия" title="Фриули-Венеция-Джулия" href="" coords="259,35,255,46,244,61,236,75,242,82,259,94,271,94,284,89,303,90,296,76,299,68,285,63,296,52" shape="poly">-->
-<!--                    <div class="map_container_nameBlock lombardy">-->
-<!--                        <a href="" class="map_text">Ломбардия <br> <img class="map_loc_italy" src="images/map-location.svg" alt="map-location" width="15">-->
-<!--                        </a>-->
-<!--                    </div>-->
-<!--                    <area target="" alt="Ломбардия" title="Ломбардия" href="" coords="144,69,143,98,147,122,175,125,205,121,215,120,229,119,214,104,197,87,202,74,185,58,175,50,163,40" shape="poly">-->
-<!--                    <div class="map_container_nameBlock marche">-->
-<!--                        <a href="" class="map_text">Марке <br> <img class="map_loc_italy" src="images/map-location.svg" alt="map-location" width="15">-->
-<!--                        </a>-->
-<!--                    </div>-->
-<!--                    <area target="" alt="Марке" title="Марке" href="" coords="263,168,260,184,247,176,235,182,243,193,251,205,265,208,268,227,276,239,288,244,294,231,300,214,290,191" shape="poly">-->
-<!--                    <div class="map_container_nameBlock campania">-->
-<!--                        <a href="" class="map_text">Кампания <br> <img class="map_loc_italy" src="images/map-location.svg" alt="map-location" width="15">-->
-<!--                        </a>-->
-<!--                    </div>-->
-<!--                    <area target="" alt="Кампания" title="Кампания" href="" coords="291,299,295,287,307,292,329,301,347,304,352,320,364,327,358,339,367,347,373,359,363,364,351,359,344,361,328,351,331,336,307,333,309,323,301,327" shape="poly">-->
-<!--                </map>-->
-<!--                <img src="images/france-map.png" alt="france-map" usemap="#image-map_france">-->
-<!--                <map name="image-map_france">-->
-<!--                    <div class="map_container_nameBlock burgundy">-->
-<!--                        <a href="" class="map_text">Бургундия <br> <img class="map_loc_italy" src="images/map-location.svg" alt="map-location" width="15">-->
-<!--                        </a>-->
-<!--                    </div>-->
-<!--                    <area target="" alt="Бургундия" title="Бургундия" href="" coords="313,168,302,173,288,172,286,183,295,202,291,211,283,227,274,239,275,253,279,265,265,275,278,293,286,305,285,316,299,318,309,312,315,304,322,292,320,279,326,268,318,249,329,226,340,212,338,202,342,184,332,174" shape="poly">-->
-<!--                    <div class="map_container_nameBlock provence">-->
-<!--                        <a href="" class="map_text">Прованс <br> <img class="map_loc_italy" src="images/map-location.svg" alt="map-location" width="15">-->
-<!--                        </a>-->
-<!--                    </div>-->
-<!--                    <area target="" alt="Прованс" title="Прованс" href="" coords="348,421,339,416,343,409,330,403,336,395,343,395,357,397,369,401,381,403,391,404,397,400,403,391,403,382,397,374,405,361,411,361,414,368,423,373,431,373,436,377,431,389,421,403,412,411,403,423,392,430,375,435,359,431" shape="poly">-->
-<!--                    <div class="map_container_nameBlock champagne">-->
-<!--                        <a href="" class="map_text">Шампань <br> <img class="map_loc_italy" src="images/map-location.svg" alt="map-location" width="15">-->
-<!--                        </a>-->
-<!--                    </div>-->
-<!--                    <area target="" alt="Шампань" title="Шампань" href="" coords="328,87,313,93,303,100,303,108,294,118,302,135,312,136,323,134,332,137,335,145,351,145,357,135,358,125,357,111,350,94" shape="poly">-->
-<!--                    <div class="map_container_nameBlock loire_valley">-->
-<!--                        <a href="" class="map_text">Долина Луары <br> <img class="map_loc_italy" src="images/map-location.svg" alt="map-location" width="15">-->
-<!--                        </a>-->
-<!--                    </div>-->
-<!--                    <area target="" alt="Долина Луары" title="Долина Луары" href="" coords="79,162,86,155,98,161,110,153,127,140,142,143,156,149,170,155,182,163,199,143,205,126,222,143,238,135,246,139,247,155,254,158,260,164,250,176,243,190,226,180,219,191,215,202,201,196,186,205,175,214,153,203,137,199,122,195,109,196,100,203,90,195,89,178,81,175" shape="poly">-->
-<!--                    <div class="map_container_nameBlock bordeaux">-->
-<!--                        <a href="" class="map_text">Бордо <br> <img class="map_loc_italy" src="images/map-location.svg" alt="map-location" width="15">-->
-<!--                        </a>-->
-<!--                    </div>-->
-<!--                    <area target="" alt="Бордо" title="Бордо" href="" coords="115,284,108,295,102,309,105,319,96,337,104,352,125,346,136,351,143,358,155,351,159,332,165,316,153,308,151,292,127,283,128,301" shape="poly">-->
-<!--                </map>-->
-<!--                <img src="images/spain-map.png" alt="spain-map" usemap="#image-map_spain">-->
-<!--                <map name="image-map_spain">-->
-<!--                    <div class="map_container_nameBlock сatalonia">-->
-<!--                        <a href="" class="map_text">Каталония <br> <img class="map_loc_italy" src="images/map-location.svg" alt="map-location" width="15">-->
-<!--                        </a>-->
-<!--                    </div>-->
-<!--                    <area target="" alt="Каталония" title="Каталония" href="" coords="487,209,483,201,467,209,453,201,443,203,429,197,417,198,412,186,395,174,389,180,368,181,368,199,363,211,367,219,362,226,362,235,371,247,370,257,378,269,379,274,439,254,477,232" shape="poly">-->
-<!--                    <div class="map_container_nameBlock valencia">-->
-<!--                        <a href="" class="map_text">Валенсия <br> <img class="map_loc_italy" src="images/map-location.svg" alt="map-location" width="15">-->
-<!--                        </a>-->
-<!--                    </div>-->
-<!--                    <area target="" alt="Валенсия" title="Валенсия" href="" coords="378,275,371,260,360,260,345,256,343,268,336,279,322,296,313,304,311,316,305,324,279,321,273,334,273,352,288,357,290,378,290,385,296,398,308,405,346,384,326,347" shape="poly">-->
-<!--                    <div class="map_container_nameBlock castilla_la_mancha">-->
-<!--                        <a href="" class="map_text">Кастилья-ла-Манча <br> <img class="map_loc_italy" src="images/map-location.svg" alt="map-location" width="15">-->
-<!--                        </a>-->
-<!--                    </div>-->
-<!--                    <area target="" alt="Кастилья-ла-Манча" title="Кастилья-ла-Манча" href="" coords="281,320,272,332,273,351,287,356,288,375,271,375,255,381,254,392,241,405,224,416,211,403,211,389,203,376,182,373,170,379,141,385,134,368,138,345,150,336,147,323,145,309,152,301,169,306,183,302,207,308,207,321,219,314,234,306,223,296,210,284,207,271,210,255,230,260,246,268,258,258,275,273,276,287,272,304" shape="poly">-->
-<!--                    <div class="map_container_nameBlock castilla_leon">-->
-<!--                        <a href="" class="map_text">Кастилья-Леон <br> <img class="map_loc_italy" src="images/map-location.svg" alt="map-location" width="15">-->
-<!--                        </a>-->
-<!--                    </div>-->
-<!--                    <area target="" alt="Кастилья-Леон" title="Кастилья-Леон" href="" coords="76,177,74,159,87,158,84,146,94,138,115,141,134,142,148,148,171,150,182,149,200,160,219,152,233,156,226,174,219,191,223,206,253,208,265,216,260,234,258,256,245,264,210,253,179,264,166,281,151,300,122,296,87,282,71,265,78,236,107,218,107,204,99,195,98,184" shape="poly">-->
-<!--                </map>-->
-<!--            </div>-->
-<!--            <div class="wrapper">-->
+        <div class="searchByMap">
+            <div class="map_container">
+                <img src="images/italy-map.png" alt="italy-map" usemap="#image-map_italy">
+                <map class="italy_map" name="image-map_italy">
+                    <div class="map_container_nameBlock piedmont">
+                        <a href="" class="map_text">Piedmont <br> <img class="map_loc_italy" src="images/map-location.svg" alt="map-location" width="15">
+                        </a>
+                    </div>
+                    <div class="map_container_nameBlock venice">
+                        <a href="" class="map_text">Venice <br> <img class="map_loc_italy" src="images/map-location.svg" alt="map-location" width="15">
+                        </a>
+                    </div>
+                    <div class="map_container_nameBlock tuscany">
+                        <a href="" class="map_text">Tuscany<br> <img class="map_loc_italy" src="images/map-location.svg" alt="map-location" width="15">
+                        </a>
+                    </div>
+                    <div class="map_container_nameBlock northeastern_italy">
+                        <a href="" class="map_text">Northeastern Italy<br> <img class="map_loc_italy" src="images/map-location.svg" alt="map-location" width="15">
+                        </a>
+                    </div>
+                </map>
+                <img src="images/france-map.png" alt="france-map" usemap="#image-map_france">
+                <map name="image-map_france">
+                    <div class="map_container_nameBlock burgundy">
+                        <a href="" class="map_text">Burgundy <br> <img class="map_loc_italy" src="images/map-location.svg" alt="map-location" width="15">
+                        </a>
+                    </div>
+                    <div class="map_container_nameBlock provence">
+                        <a href="" class="map_text">Provence <br> <img class="map_loc_italy" src="images/map-location.svg" alt="map-location" width="15">
+                        </a>
+                    </div>
+                    <div class="map_container_nameBlock champagne">
+                        <a href="" class="map_text">Champagne <br> <img class="map_loc_italy" src="images/map-location.svg" alt="map-location" width="15">
+                        </a>
+                    </div>
+                    <div class="map_container_nameBlock loire_valley">
+                        <a href="" class="map_text">Loire Valley <br> <img class="map_loc_italy" src="images/map-location.svg" alt="map-location" width="15">
+                        </a>
+                    </div>
+                    <div class="map_container_nameBlock bordeaux">
+                        <a href="" class="map_text">Bordeaux <br> <img class="map_loc_italy" src="images/map-location.svg" alt="map-location" width="15">
+                        </a>
+                    </div>
+                </map>
+                <img src="images/spain-map.png" alt="spain-map" usemap="#image-map_spain">
+                <map name="image-map_spain">
+                    <div class="map_container_nameBlock сatalonia">
+                        <a href="" class="map_text">Catalonia <br> <img class="map_loc_italy" src="images/map-location.svg" alt="map-location" width="15">
+                        </a>
+                    </div>
+                    <div class="map_container_nameBlock valencia">
+                        <a href="" class="map_text">Valencia <br> <img class="map_loc_italy" src="images/map-location.svg" alt="map-location" width="15">
+                        </a>
+                    </div>
+                    <div class="map_container_nameBlock northern_spain">
+                        <a href="" class="map_text">Northern Spain<br> <img class="map_loc_italy" src="images/map-location.svg" alt="map-location" width="15">
+                        </a>
+                    </div>
+                    <div class="map_container_nameBlock andalucia">
+                        <a href="" class="map_text">Andalucia <br> <img class="map_loc_italy" src="images/map-location.svg" alt="map-location" width="15">
+                        </a>
+                    </div>
+                </map>
+            </div>
+<!--            <div class="wrapper b-wrapper">-->
 <!--                <div class="search__results byMap">-->
-<!--                    <p><br>The user selects a region on the map.-->
-<!--                        <br>A list of wines made in this region will be displayed here.</p>-->
+<!--                    <div class="result-point">-->
+<!--                        <ul>-->
+<!--                            <li>Choose region on the map </li>-->
+<!--                            <li>Click on it</li>-->
+<!--                            <li>You will get Top 5 wines of the region-->
+<!--                            <li>Click on one of them and you will get more information</li>-->
+<!--                        </ul>-->
+<!--                    </div>-->
 <!--                </div>-->
 <!--            </div>-->
-<!--        </div>-->
+        </div>
     </div>
 
 
