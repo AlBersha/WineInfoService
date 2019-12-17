@@ -190,7 +190,7 @@ header button:focus {
 .b-wrapper {
   width: 60%;
   margin: 0 auto;
-  background-color: rgba(255, 248, 225, 0.9);
+  background-color: #fff8e1;
   padding: 45px;
 }
 
@@ -279,7 +279,7 @@ header button:focus {
 
 .map_text {
   color: #7f0000;
-  font-size: 18px;
+  font-size: 20px;
   margin-bottom: 0;
 }
 .map_text:hover {
@@ -313,12 +313,12 @@ header button:focus {
 
 .provence {
   top: 385px;
-  left: 835px;
+  left: 815px;
 }
 
 .champagne {
   top: 135px;
-  left: 810px;
+  left: 780px;
 }
 
 .loire_valley {
@@ -343,7 +343,7 @@ header button:focus {
 
 .northern_spain {
   top: 120px;
-  left: 1120px;
+  left: 1100px;
 }
 
 .andalucia {
