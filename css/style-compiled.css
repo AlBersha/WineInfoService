@@ -270,7 +270,6 @@ header button:focus {
   text-decoration: none;
   font-size: 26px;
   font-weight: bold;
-  transition: 0.4s;
 }
 
 .map_container_nameBlock {
