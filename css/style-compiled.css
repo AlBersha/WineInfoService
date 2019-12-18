@@ -351,6 +351,29 @@ header button:focus {
   left: 1150px;
 }
 
+footer {
+  position: relative;
+  background-color: #7f0000;
+  color: white;
+}
+
+.footer_content {
+  height: 60px;
+  display: flex;
+  font-size: 19px;
+  align-items: center;
+  justify-content: center;
+}
+.footer_content p {
+  padding-left: 45px;
+}
+.footer_content a {
+  padding: 6px;
+}
+.footer_content a img {
+  width: 40px;
+}
+
 html {
   scroll-behavior: smooth;
 }
