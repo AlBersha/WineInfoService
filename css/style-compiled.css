@@ -263,13 +263,14 @@ header button:focus {
   padding: 2px;
 }
 .map_container a {
+  transition: 0.3s;
   color: #7f0000;
 }
 .map_container a:hover {
   text-decoration: none;
   font-size: 26px;
   font-weight: bold;
-  transition: 0.5s;
+  transition: 0.4s;
 }
 
 .map_container_nameBlock {
