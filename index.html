@@ -81,7 +81,7 @@
             <form name="userForm">
                 <input type="hidden" name="id" value="0" />
                 <div class="form-group">
-                    <input class="form-control mainInput" name="name" placeholder="Search.." />
+                    <input class="form-control mainInput" id="input" name="name" placeholder="Search.." />
                 </div>
             </form>
             <div class="search__results viaForm">
@@ -380,6 +380,7 @@
                 }),
                 success: function (wine) {
                     if(wine.name){
+                        document.getElementById("input").value = wine.name;
                         document.getElementsByClassName("alert")[0].style.display = "none";
                         document.getElementById("search_bar_results").style.display = "block";
                         document.getElementById("name").style.display = "flex";
