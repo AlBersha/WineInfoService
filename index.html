@@ -137,15 +137,15 @@
                 <img src="images/italy-map.png" alt="italy-map" usemap="#image-map_italy">
                 <map class="italy_map" name="image-map_italy">
                     <div class="map_container_nameBlock piedmont">
-                        <button href="" class="map_text" id="piedmont">Piedmont</button>
+                        <button class="map_text" id="piedmont">Piedmont</button>
                         <br> <img class="map_loc_italy" src="images/map-location.svg" alt="map-location" width="15">
                     </div>
                     <div class="map_container_nameBlock tuscany">
-                        <a href="" class="map_text" id="tuscany">Tuscany</a>
+                        <button class="map_text" id="tuscany">Tuscany</button>
                         <br> <img class="map_loc_italy" src="images/map-location.svg" alt="map-location" width="15">
                     </div>
                     <div class="map_container_nameBlock northeastern_italy">
-                        <a href="" class="map_text" id="northeastern_italy">Northeastern Italy</a>
+                        <button class="map_text" id="northeastern_italy">Northeastern Italy</button>
                         <br> <img class="map_loc_italy" src="images/map-location.svg" alt="map-location" width="15">
                     </div>
                 </map>
@@ -387,7 +387,7 @@
                     if(wine.name){
                         document.getElementsByClassName("alert")[0].style.display = "none";
                         document.getElementById("search_bar_results").style.display = "block";
-                        //document.getElementsByClassName("options")[0].innerHTML = "Variety: ";
+                        document.getElementsByClassName("options")[0].innerHTML = "Variety: ";
                         document.getElementById("name").innerHTML = wine.name;
                         if(wine.country){
                             document.getElementById("country").innerHTML = wine.country;
