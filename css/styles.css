@@ -265,12 +265,13 @@ header button:focus {
   position: relative;
   padding: 2px;
 }
-.map_container a, .map_container button {
+.map_container button {
   transition: 0.3s;
+  border: none;
+  background: transparent;
   color: #7f0000;
 }
-.map_container a:hover, .map_container button:hover {
-  text-decoration: none;
+.map_container button:hover {
   transform: translateZ(40px);
   font-weight: bold;
 }
