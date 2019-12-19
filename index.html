@@ -200,11 +200,11 @@
                         </ul>
                     </div>
                     <div class="result-option">
-                        <div class="result-option_wine" id="result-block0"></div>
-                        <div class="result-option_wine" id="result-block1"></div>
-                        <div class="result-option_wine" id="result-block2"></div>
-                        <div class="result-option_wine" id="result-block3"></div>
-                        <div class="result-option_wine" id="result-block4"></div>
+                        <p class="result-option_wine" id="result-block0"></p>
+                        <p class="result-option_wine" id="result-block1"></p>
+                        <p class="result-option_wine" id="result-block2"></p>
+                        <p class="result-option_wine" id="result-block3"></p>
+                        <p class="result-option_wine" id="result-block4"></p>
                     </div>
                 </div>
             </div>
@@ -366,11 +366,11 @@
             });
         }
 
-        $("div").click(function (e) {
+        $("p").click(function (e) {
             e.preventDefault();
             let id = $(this).attr('id');
             let wine = document.getElementById(id).innerHTML;
-            console.log(wine);
+            //console.log(wine);
 
             GetInfo(wine);
         });
@@ -429,6 +429,7 @@
                         document.getElementsByClassName("alert")[0].style.visibility = "visible";
                         document.getElementsByClassName("alert")[0].innerHTML = "There are no element you try to find. Please input another value";
                         document.getElementById("search_bar_results").style.display = "none";
+                        document.getElementById("name").style.display = "none";
                         // document.getElementsByClassName("options")[0].innerHTML = "";
                         // document.getElementsByClassName("options")[1].innerHTML = "";
                         // document.getElementsByClassName("options")[2].innerHTML = "";
