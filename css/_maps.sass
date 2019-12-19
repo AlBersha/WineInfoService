@@ -26,17 +26,28 @@
 .map_container_nameBlock
   display: inline-block
   position: absolute
+  button
+    transition: 0.3s
+    border: none
+    background: transparent
+    color: $darkRed
+    &:hover
+      //text-decoration: none
+      //font-size: 26px
+      transform: translateZ(40px)
+      font-weight: bold
 
-.map_text
-  transition: 0.3s
-  border: none
-  background: transparent
-  color: $darkRed
-  &:hover
-    //text-decoration: none
-    //font-size: 26px
-    transform: translateZ(40px)
-    font-weight: bold
+
+//.map_text
+//  transition: 0.3s
+//  border: none
+//  background: transparent
+//  color: $darkRed
+//  &:hover
+//    //text-decoration: none
+//    //font-size: 26px
+//    transform: translateZ(40px)
+//    font-weight: bold
 
 .piedmont
   top: 80px
@@ -92,8 +103,8 @@
 
 .result-option_wine
   padding-left: 20px
-  cursor: pointer
   &:hover
     font-weight: bold
+    cursor: pointer
 
 

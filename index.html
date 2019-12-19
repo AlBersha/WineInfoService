@@ -423,7 +423,8 @@
                             document.getElementById("description").innerHTML = "";
                         }
                     }else{
-                        document.getElementsByClassName("alert")[0].style.visibility = "visible";
+                        document.getElementsByClassName("alert")[0].style.display = "block";
+                        //document.getElementsByClassName("alert")[0].style.visibility = "visible";
                         document.getElementsByClassName("alert")[0].innerHTML = "There are no element you try to find. Please input another value";
                         document.getElementById("search_bar_results").style.display = "none";
                         document.getElementById("name").style.display = "none";
