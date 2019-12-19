@@ -266,29 +266,20 @@ header button:focus {
   padding: 2px;
 }
 
-.map_container_nameBlock button {
-  transition: 0.3s;
-  border: none;
-  background: transparent;
-  color: #7f0000;
-}
-.map_container_nameBlock button:hover {
-  transform: translateZ(40px);
-  font-weight: bold;
-}
-
 .map_container_nameBlock {
   display: inline-block;
   position: absolute;
 }
 
 .map_text {
+  transition: 0.3s;
+  border: none;
+  background: transparent;
   color: #7f0000;
-  font-size: 20px;
-  margin-bottom: 0;
 }
 .map_text:hover {
-  font-size: 23px;
+  transform: translateZ(40px);
+  font-weight: bold;
 }
 
 .piedmont {
@@ -357,7 +348,7 @@ header button:focus {
 }
 
 .result-option_wine {
-  padding: 5px 0 0 20px;
+  padding-left: 20px;
   cursor: pointer;
 }
 .result-option_wine:hover {
