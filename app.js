@@ -39,8 +39,21 @@ app.post('/api/country', jsonParser, function (req, res) {
     if (!req.body) return res.sendStatus(400);
     let userName = req.body.name;
     console.log(userName);
-    //userName = "Provence";
-    User.findOne({province: userName}, function (err, result) {
+    console.log("Provence");
+    User.find({province: userName}, function (err, result) {
+        if (err) return console.log(err);
+        console.log(result);
+        //console.log(result[0]);
+        res.send(result)
+    })
+});
+
+app.post('/api/info', jsonParser, function (req, res) {
+    if (!req.body) return res.sendStatus(400);
+    let userName = req.body.name;
+    console.log(userName);
+    console.log("Provence");
+    User.findOne({name: userName}, function (err, result) {
         if (err) return console.log(err);
         console.log(result);
         //console.log(result[0]);

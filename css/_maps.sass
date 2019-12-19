@@ -2,6 +2,7 @@
   width: 100%
 
 .map_container
+  margin: 40px 0
   background-image: url("../images/wine-bottles1.jpg")
   background-position: center
   background-repeat: no-repeat
@@ -13,7 +14,8 @@
     color: $darkRed
   a:hover
     text-decoration: none
-    font-size: 26px
+    //font-size: 26px
+    transform: translateZ(40px)
     font-weight: bold
 
 .map_container_nameBlock
@@ -78,3 +80,11 @@
 .andalucia
   top: 320px
   left: 1150px
+
+.result-option_wine
+  padding: 5px 0 0 20px
+  cursor: pointer
+  &:hover
+    font-weight: bold
+
+

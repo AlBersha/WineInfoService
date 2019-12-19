@@ -192,6 +192,7 @@ header button:focus {
   margin: 0 auto;
   background-color: #fff8e1;
   padding: 45px;
+  border-radius: 10px;
 }
 
 .wrapper {
@@ -207,7 +208,7 @@ header button:focus {
 
 .mainInput {
   font-size: 23px;
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   height: 50px;
   border-radius: 6px;
@@ -232,9 +233,6 @@ header button:focus {
   margin: 0;
 }
 
-.search__results {
-  padding-bottom: 80px;
-}
 .search__results ul > li {
   margin: 5px 0;
 }
@@ -245,7 +243,11 @@ header button:focus {
   margin-bottom: 5px;
 }
 
-.options {
+#search_bar_results {
+  display: none;
+}
+
+.options, .options_drop {
   font-weight: bold;
   padding-right: 10px;
 }
@@ -255,6 +257,7 @@ header button:focus {
 }
 
 .map_container {
+  margin: 40px 0;
   background-image: url("../images/wine-bottles1.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -268,7 +271,7 @@ header button:focus {
 }
 .map_container a:hover {
   text-decoration: none;
-  font-size: 26px;
+  transform: translateZ(40px);
   font-weight: bold;
 }
 
@@ -351,27 +354,52 @@ header button:focus {
   left: 1150px;
 }
 
+.result-option_wine {
+  padding: 5px 0 0 20px;
+  cursor: pointer;
+}
+.result-option_wine:hover {
+  font-weight: bold;
+}
+
 footer {
+  margin-top: 40px;
   position: relative;
-  background-color: #7f0000;
+  background-color: rgba(127, 0, 0, 0.9);
   color: white;
 }
 
 .footer_content {
   height: 60px;
   display: flex;
-  font-size: 19px;
+  font-size: 18px;
   align-items: center;
   justify-content: center;
 }
-.footer_content p {
-  padding-left: 45px;
+.footer_content div {
+  padding-left: 260px;
 }
 .footer_content a {
   padding: 6px;
 }
 .footer_content a img {
   width: 40px;
+}
+
+#search_bar_results_drop {
+  display: none;
+  transition: 0.5s;
+}
+
+.pop-up {
+  display: none;
+  width: 100vw;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding-top: 70px;
+  position: fixed;
+  top: 0;
+  overflow: hidden;
 }
 
 html {

@@ -83,12 +83,11 @@
                 <div class="form-group">
                     <input class="form-control mainInput" name="name" placeholder="Search.." />
                 </div>
-
             </form>
             <div class="search__results viaForm">
                 <div class="alert alert-danger" role="alert"></div>
                 <div class="result-point">
-                    <span class="options" id="name_field"></span>
+                    <span class="options"></span>
                     <div id = "name">
                         <ul>
                             <li>Enter name of wine, you want to know about.</li>
@@ -104,31 +103,32 @@
                         </ul>
                     </div>
                 </div>
-                <div class="result-point">
-                    <span class="options" id="country_field"></span>
-                    <div id = "country"></div>
+                <div id="search_bar_results">
+                    <div class="result-point">
+                        <span class="options">Country: </span>
+                        <div id = "country"></div>
+                    </div>
+                    <div class="result-point">
+                        <span class="options">Designation: </span>
+                        <div id = "designation"></div>
+                    </div>
+                    <div class="result-point">
+                        <span class="options">Province: </span>
+                        <div id = "province"></div>
+                    </div>
+                    <div class="result-point">
+                        <span class="options">Region: </span>
+                        <div id = "region"></div>
+                    </div>
+                    <div class="result-point">
+                        <span class="options">Winery: </span>
+                        <div id = "winery"> </div>
+                    </div>
+                    <div class="result-point">
+                        <span class="options description">Description: </span>
+                        <div id = "description"></div>
+                    </div>
                 </div>
-                <div class="result-point">
-                    <span class="options" id="designation_field"></span>
-                    <div id = "designation"></div>
-                </div>
-                <div class="result-point">
-                    <span class="options" id="province_field"></span>
-                    <div id = "province"></div>
-                </div>
-                <div class="result-point">
-                    <span class="options" id="region_field"></span>
-                    <div id = "region"></div>
-                </div>
-                <div class="result-point">
-                    <span class="options" id="description_field"></span>
-                    <div id = "winery"> </div>
-                </div>
-                <div class="result-point">
-                    <span class="options description"></span>
-                    <div id = "description"> </div>
-                </div>
-
             </div>
         </div>
 
@@ -137,85 +137,117 @@
                 <img src="images/italy-map.png" alt="italy-map" usemap="#image-map_italy">
                 <map class="italy_map" name="image-map_italy">
                     <div class="map_container_nameBlock piedmont">
-                        <a href="" class="map_text" id="piedmont">Piedmont <br> <img class="map_loc_italy" src="images/map-location.svg" alt="map-location" width="15">
-                        </a>
-                    </div>
-                    <div class="map_container_nameBlock venice">
-                        <a href="" class="map_text" id="venice">Venice <br> <img class="map_loc_italy" src="images/map-location.svg" alt="map-location" width="15">
-                        </a>
+                        <a href="" class="map_text" id="piedmont">Piedmont</a>
+                        <br> <img class="map_loc_italy" src="images/map-location.svg" alt="map-location" width="15">
                     </div>
                     <div class="map_container_nameBlock tuscany">
-                        <a href="" class="map_text" id="tuscany">Tuscany<br> <img class="map_loc_italy" src="images/map-location.svg" alt="map-location" width="15">
-                        </a>
+                        <a href="" class="map_text" id="tuscany">Tuscany</a>
+                        <br> <img class="map_loc_italy" src="images/map-location.svg" alt="map-location" width="15">
                     </div>
                     <div class="map_container_nameBlock northeastern_italy">
-                        <a href="" class="map_text" id="northeastern_italy">Northeastern Italy<br> <img class="map_loc_italy" src="images/map-location.svg" alt="map-location" width="15">
-                        </a>
+                        <a href="" class="map_text" id="northeastern_italy">Northeastern Italy</a>
+                        <br> <img class="map_loc_italy" src="images/map-location.svg" alt="map-location" width="15">
                     </div>
                 </map>
                 <img src="images/france-map.png" alt="france-map" usemap="#image-map_france">
                 <map name="image-map_france">
                     <div class="map_container_nameBlock burgundy">
-                        <a href="" class="map_text" id="burgundy">Burgundy <br> <img class="map_loc_italy" src="images/map-location.svg" alt="map-location" width="15">
-                        </a>
+                        <a href="" class="map_text" id="burgundy">Burgundy</a><br>
+                        <img class="map_loc_italy" src="images/map-location.svg" alt="map-location" width="15">
                     </div>
                     <div class="map_container_nameBlock provence">
-                        <a href="" class="map_text" id="provence">Provence <br> <img class="map_loc_italy" src="images/map-location.svg" alt="map-location" width="15">
-                        </a>
+                        <a href="" class="map_text" id="provence">Provence</a>
+                        <br> <img class="map_loc_italy" src="images/map-location.svg" alt="map-location" width="15">
                     </div>
                     <div class="map_container_nameBlock champagne">
-                        <a href="" class="map_text" id="champagne">Champagne <br> <img class="map_loc_italy" src="images/map-location.svg" alt="map-location" width="15">
-                        </a>
+                        <a href="" class="map_text" id="champagne">Champagne</a>
+                        <br> <img class="map_loc_italy" src="images/map-location.svg" alt="map-location" width="15">
                     </div>
                     <div class="map_container_nameBlock loire_valley">
-                        <a href="" class="map_text" id="loire_valley">Loire Valley <br> <img class="map_loc_italy" src="images/map-location.svg" alt="map-location" width="15">
-                        </a>
+                        <a href="" class="map_text" id="loire_valley">Loire Valley</a>
+                        <br> <img class="map_loc_italy" src="images/map-location.svg" alt="map-location" width="15">
                     </div>
                     <div class="map_container_nameBlock bordeaux">
-                        <a href="" class="map_text" id="bordeaux">Bordeaux <br> <img class="map_loc_italy" src="images/map-location.svg" alt="map-location" width="15">
-                        </a>
+                        <a href="" class="map_text" id="bordeaux">Bordeaux</a>
+                        <br> <img class="map_loc_italy" src="images/map-location.svg" alt="map-location" width="15">
                     </div>
                 </map>
-<!--                <img src="images/spain-map.png" alt="spain-map" usemap="#image-map_spain">-->
-<!--                <map name="image-map_spain">-->
-<!--                    <div class="map_container_nameBlock сatalonia">-->
-<!--                        <a href="" class="map_text" id="catalonia">Catalonia <br> <img class="map_loc_italy" src="images/map-location.svg" alt="map-location" width="15">-->
-<!--                        </a>-->
-<!--                    </div>-->
-<!--                    <div class="map_container_nameBlock valencia">-->
-<!--                        <a href="" class="map_text" id="valencia">Valencia <br> <img class="map_loc_italy" src="images/map-location.svg" alt="map-location" width="15">-->
-<!--                        </a>-->
-<!--                    </div>-->
-<!--                    <div class="map_container_nameBlock northern_spain">-->
-<!--                        <a href="" class="map_text" id="northern_spain">Northern Spain<br> <img class="map_loc_italy" src="images/map-location.svg" alt="map-location" width="15">-->
-<!--                        </a>-->
-<!--                    </div>-->
-<!--                    <div class="map_container_nameBlock andalucia">-->
-<!--                        <a href="" class="map_text" id="andalucia">Andalucia <br> <img class="map_loc_italy" src="images/map-location.svg" alt="map-location" width="15">-->
-<!--                        </a>-->
-<!--                    </div>-->
-<!--                </map>-->
+                <img src="images/spain-map.png" alt="spain-map" usemap="#image-map_spain">
+                <map name="image-map_spain">
+                    <div class="map_container_nameBlock сatalonia">
+                        <a href="" class="map_text" id="catalonia">Catalonia</a>
+                        <br> <img class="map_loc_italy" src="images/map-location.svg" alt="map-location" width="15">
+                    </div>
+                    <div class="map_container_nameBlock northern_spain">
+                        <a href="" class="map_text" id="northern_spain">Northern Spain</a>
+                        <br> <img class="map_loc_italy" src="images/map-location.svg" alt="map-location" width="15">
+                    </div>
+                    <div class="map_container_nameBlock andalucia">
+                        <a href="" class="map_text" id="andalucia">Andalucia</a>
+                        <br> <img class="map_loc_italy" src="images/map-location.svg" alt="map-location" width="15">
+                    </div>
+                </map>
             </div>
             <div class="wrapper b-wrapper">
                 <div class="search__results byMap">
-                    <div id="result-point">
+                    <div class="result-option" id="result-point">
                         <ul>
-                            <li>Choose region on the map </li>
-                            <li>Click on it</li>
-                            <li>You will get Top 5 wines of the region
-                            <li>Click on one of them and you will get more information</li>
+                            <li id="result0">Choose region on the map </li>
+                            <li id="result1">Click on it</li>
+                            <li id="result2">You will get Top 5 wines of the region
+                            <li id="result3">Click on one of them</li>
+                            <li id="result4">You will get more information</li>
                         </ul>
                     </div>
-                    <div id="result-div">
-
+                    <div class="result-option">
+                        <div class="result-option_wine" id="result-block0"></div>
+                        <div class="result-option_wine" id="result-block1"></div>
+                        <div class="result-option_wine" id="result-block2"></div>
+                        <div class="result-option_wine" id="result-block3"></div>
+                        <div class="result-option_wine" id="result-block4"></div>
                     </div>
+                </div>
+            </div>
+            <div class="pop-up" id="pop-up">
+                <div class="b-wrapper">
+                    <div id="search_bar_results_drop">
+                            <div class="result-point">
+                                <span class="options_drop"></span>
+                                <div id = "name_drop">
+                                </div>
+                            </div>
+                            <div class="result-point">
+                                <span class="options_drop">Country: </span>
+                                <div id = "country_drop"></div>
+                            </div>
+                            <div class="result-point">
+                                <span class="options_drop">Designation: </span>
+                                <div id = "designation_drop"></div>
+                            </div>
+                            <div class="result-point">
+                                <span class="options_drop">Province: </span>
+                                <div id = "province_drop"></div>
+                            </div>
+                            <div class="result-point">
+                                <span class="options_drop">Region: </span>
+                                <div id = "region_drop"></div>
+                            </div>
+                            <div class="result-point">
+                                <span class="options_drop">Winery: </span>
+                                <div id = "winery_drop"></div>
+                            </div>
+                            <div class="result-point">
+                                <span class="options_drop">Description: </span>
+                                <div id = "description_drop"></div>
+                            </div>
+                        </div>
                 </div>
             </div>
         </div>
         <footer>
             <div class="wrapper">
                 <div class="footer_content">
-                    <p>It would really nice to hear a review. Write to me</p>
+                    <div>It would really nice to hear a review. Write to me</div>
                     <a href="https://t.me/Necessity"><img src="images/telegram.svg" alt="telegram"></a>
                     <a href="https://www.instagram.com/_sp_ri_ng_/"><img src="images/instagram.svg" alt="instagram"></a>
                     <a href="https://github.com/AlBersha"><img src="images/github.svg" alt="github"></a>
@@ -225,13 +257,16 @@
     </div>
 
 
-
 <script type="text/javascript">
     $.noConflict();
 </script>
 
 <script>
     jQuery( document ).ready(function( $ ){
+        document.addEventListener("click", function () {
+            $("#pop-up").hide();
+        });
+
         function GetWine(CI){
             $.ajax({
                 url: "api/country",
@@ -241,10 +276,14 @@
                     name: CI,
                 }),
                 success: function (user) {
-                    document.getElementById("result-point").innerHTML = "";
-                    // for(let i = 0; i<5; i++){
-                         document.getElementById("result-point").innerHTML += user.name + "<br>";
-                    // }
+                    document.getElementById("result-point").style.fontWeight = 700;
+                    // document.getElementById("result-point").style.fontSize = 25;
+                    document.getElementById("result-point").innerHTML = "Top 5 rate wine of " + CI + " province:" + "<br>";
+                    document.getElementById("result-block0").innerHTML = user[0].name;
+                    document.getElementById("result-block1").innerHTML = user[1].name;
+                    document.getElementById("result-block2").innerHTML = user[2].name;
+                    document.getElementById("result-block3").innerHTML = user[3].name;
+                    document.getElementById("result-block4").innerHTML = user[4].name;
                 }
             })
         }
@@ -253,10 +292,91 @@
             e.preventDefault();
             let id = $(this).attr('id');
             //console.log(id);
-            let name = document.getElementById(id).textContent;
+            let name = document.getElementById(id).text;
             console.log(name);
 
             GetWine(name);
+        });
+
+        function GetInfo(wineName) {
+            $.ajax({
+                url: "api/info",
+                contentType: "application/json",
+                method: "POST",
+                data: JSON.stringify({
+                    name: wineName,
+                }),
+                success: function (wine) {
+                    if(wine.name){
+                        document.getElementById("search_bar_results_drop").style.display = "block";
+                        document.getElementsByClassName("pop-up")[0].style.display = "block";
+                        document.getElementsByClassName("options_drop")[0].innerHTML = "Variety: ";
+                        document.getElementById("name_drop").innerHTML = wine.name;
+                        if(wine.country){
+                            document.getElementById("country_drop").innerHTML = wine.country;
+                        }else{
+                            document.getElementsByClassName("options_drop")[1].innerHTML = "";
+                            document.getElementById("country_drop").innerHTML = "";
+                        }
+                        if(wine.designation){
+                            document.getElementById("designation_drop").innerHTML = wine.designation;
+                        }else{
+                            document.getElementsByClassName("options_drop")[2].innerHTML = "";
+                            document.getElementById("designation_drop").innerHTML = "";
+                        }
+                        if(wine.province){
+                            document.getElementById("province_drop").innerHTML = wine.province;
+                        }else{
+                            document.getElementsByClassName("options_drop")[3].innerHTML = "";
+                            document.getElementById("province_drop").innerHTML = "";
+                        }
+                        if(wine.region){
+                            document.getElementById("region_drop").innerHTML = wine.region;
+                        }else{
+                            document.getElementsByClassName("options_drop")[4].innerHTML = "";
+                            document.getElementById("region_drop").innerHTML = "";
+                        }
+                        if(wine.winery){
+                            document.getElementById("winery_drop").innerHTML = wine.winery;
+                        }else{
+                            document.getElementsByClassName("options_drop")[5].innerHTML = "";
+                            document.getElementById("winery_drop").innerHTML = "";
+                        }
+                        if(wine.description){
+                            document.getElementById("description_drop").innerHTML = wine.description;
+                        }else{
+                            document.getElementsByClassName("options_drop")[6].innerHTML = "";
+                            document.getElementById("description_drop").innerHTML = "";
+                        }
+                    }else{
+                        document.getElementsByClassName("alert")[0].style.visibility = "visible";
+                        //document.getElementsByClassName("alert")[0].innerHTML = "There are no element you try to find. Please input another value";
+                        document.getElementById("name_drop").innerHTML = "";
+                        document.getElementById("country_drop").innerHTML = "";
+                        document.getElementById("designation_drop").innerHTML = "";
+                        document.getElementById("province_drop").innerHTML = "";
+                        document.getElementById("region_drop").innerHTML = "";
+                        document.getElementById("winery_drop").innerHTML = "";
+                        document.getElementById("description_drop").innerHTML = "";
+                        document.getElementsByClassName("options_drop")[0].innerHTML = "";
+                        document.getElementsByClassName("options_drop")[1].innerHTML = "";
+                        document.getElementsByClassName("options_drop")[2].innerHTML = "";
+                        document.getElementsByClassName("options_drop")[3].innerHTML = "";
+                        document.getElementsByClassName("options_drop")[4].innerHTML = "";
+                        document.getElementsByClassName("options_drop")[5].innerHTML = "";
+                        document.getElementsByClassName("options_drop")[6].innerHTML = "";
+                    }
+                 }
+            });
+        }
+
+        $("div").click(function (e) {
+            e.preventDefault();
+            let id = $(this).attr('id');
+            let wine = document.getElementById(id).innerHTML;
+            console.log(wine);
+
+            GetInfo(wine);
         });
 
         function GetData(wineName) {
@@ -269,47 +389,42 @@
                 }),
                 success: function (wine) {
                     if(wine.name){
-                        document.getElementsByClassName("alert")[0].style.visibility = "hidden";
+                        document.getElementsByClassName("alert")[0].style.display = "none";
                         document.getElementsByClassName("search__results")[0];
+                        document.getElementById("search_bar_results").style.display = "block";
                         document.getElementsByClassName("options")[0].innerHTML = "Variety: ";
                         document.getElementById("name").innerHTML = wine.name;
                         if(wine.country){
-                            document.getElementsByClassName("options")[1].innerHTML = "Country: ";
                             document.getElementById("country").innerHTML = wine.country;
                         }else{
                             document.getElementsByClassName("options")[1].innerHTML = "";
                             document.getElementById("country").innerHTML = "";
                         }
                         if(wine.designation){
-                            document.getElementsByClassName("options")[2].innerHTML = "Designation: ";
                             document.getElementById("designation").innerHTML = wine.designation;
                         }else{
                             document.getElementsByClassName("options")[2].innerHTML = "";
                             document.getElementById("designation").innerHTML = "";
                         }
                         if(wine.province){
-                            document.getElementsByClassName("options")[3].innerHTML = "Province: ";
                             document.getElementById("province").innerHTML = wine.province;
                         }else{
                             document.getElementsByClassName("options")[3].innerHTML = "";
                             document.getElementById("province").innerHTML = "";
                         }
                         if(wine.region){
-                            document.getElementsByClassName("options")[4].innerHTML = "Region: ";
                             document.getElementById("region").innerHTML = wine.region;
                         }else{
                             document.getElementsByClassName("options")[4].innerHTML = "";
                             document.getElementById("region").innerHTML = "";
                         }
                         if(wine.winery){
-                            document.getElementsByClassName("options")[5].innerHTML = "Winery: ";
                             document.getElementById("winery").innerHTML = wine.winery;
                         }else{
                             document.getElementsByClassName("options")[5].innerHTML = "";
                             document.getElementById("winery").innerHTML = "";
                         }
                         if(wine.description){
-                            document.getElementsByClassName("options")[6].innerHTML = "Descripion: ";
                             document.getElementById("description").innerHTML = wine.description;
                         }else{
                             document.getElementsByClassName("options")[6].innerHTML = "";
@@ -332,7 +447,6 @@
                         document.getElementsByClassName("options")[4].innerHTML = "";
                         document.getElementsByClassName("options")[5].innerHTML = "";
                         document.getElementsByClassName("options")[6].innerHTML = "";
-
                     }
                 }
             });
@@ -341,7 +455,7 @@
         $("form").submit(function (e) {
             e.preventDefault();
             let name = this.elements["name"].value;
-
+            document.getElementById("search_bar_results").style.display = "block";
             GetData(name);
         });
     });
@@ -351,6 +465,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-<!--    <script src="app.js" type="text/javascript"></script>-->
 </body>
 </html>
