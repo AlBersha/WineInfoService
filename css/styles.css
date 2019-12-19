@@ -265,13 +265,14 @@ header button:focus {
   position: relative;
   padding: 2px;
 }
-.map_container button {
+
+.map_container_nameBlock button {
   transition: 0.3s;
   border: none;
   background: transparent;
   color: #7f0000;
 }
-.map_container button:hover {
+.map_container_nameBlock button:hover {
   transform: translateZ(40px);
   font-weight: bold;
 }
