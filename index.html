@@ -137,7 +137,7 @@
                 <img src="images/italy-map.png" alt="italy-map" usemap="#image-map_italy">
                 <map class="italy_map" name="image-map_italy">
                     <div class="map_container_nameBlock piedmont">
-                        <a href="" class="map_text" id="piedmont">Piedmont</a>
+                        <button href="" class="map_text" id="piedmont">Piedmont</button>
                         <br> <img class="map_loc_italy" src="images/map-location.svg" alt="map-location" width="15">
                     </div>
                     <div class="map_container_nameBlock tuscany">
@@ -212,9 +212,8 @@
                 <div class="b-wrapper">
                     <div id="search_bar_results_drop">
                             <div class="result-point">
-                                <span class="options_drop"></span>
-                                <div id = "name_drop">
-                                </div>
+                                <span class="options_drop">Vinery: </span>
+                                <div id = "name_drop"></div>
                             </div>
                             <div class="result-point">
                                 <span class="options_drop">Country: </span>
@@ -277,6 +276,7 @@
                 }),
                 success: function (user) {
                     document.getElementById("result-point").style.fontWeight = 700;
+                    document.getElementById("search_bar_results_drop").style.display = "block";
                     // document.getElementById("result-point").style.fontSize = 25;
                     document.getElementById("result-point").innerHTML = "Top 5 rate wine of " + CI + " province:" + "<br>";
                     document.getElementById("result-block0").innerHTML = user[0].name;
@@ -288,15 +288,25 @@
             })
         }
 
-        $("a").click(function (e) {
+        $("button").click(function (e) {
             e.preventDefault();
             let id = $(this).attr('id');
             //console.log(id);
-            let name = document.getElementById(id).text;
+            let name = document.getElementById(id).innerHTML;
             console.log(name);
 
             GetWine(name);
         });
+
+        // $("a").click(function (e) {
+        //     e.preventDefault();
+        //     let id = $(this).attr('id');
+        //     //console.log(id);
+        //     let name = document.getElementById(id).text;
+        //     console.log(name);
+        //
+        //     GetWine(name);
+        // });
 
         function GetInfo(wineName) {
             $.ajax({
@@ -310,7 +320,7 @@
                     if(wine.name){
                         document.getElementById("search_bar_results_drop").style.display = "block";
                         document.getElementsByClassName("pop-up")[0].style.display = "block";
-                        document.getElementsByClassName("options_drop")[0].innerHTML = "Variety: ";
+                        //document.getElementsByClassName("options_drop")[0].innerHTML = "Variety: ";
                         document.getElementById("name_drop").innerHTML = wine.name;
                         if(wine.country){
                             document.getElementById("country_drop").innerHTML = wine.country;
@@ -350,21 +360,7 @@
                         }
                     }else{
                         document.getElementsByClassName("alert")[0].style.visibility = "visible";
-                        //document.getElementsByClassName("alert")[0].innerHTML = "There are no element you try to find. Please input another value";
-                        document.getElementById("name_drop").innerHTML = "";
-                        document.getElementById("country_drop").innerHTML = "";
-                        document.getElementById("designation_drop").innerHTML = "";
-                        document.getElementById("province_drop").innerHTML = "";
-                        document.getElementById("region_drop").innerHTML = "";
-                        document.getElementById("winery_drop").innerHTML = "";
-                        document.getElementById("description_drop").innerHTML = "";
-                        document.getElementsByClassName("options_drop")[0].innerHTML = "";
-                        document.getElementsByClassName("options_drop")[1].innerHTML = "";
-                        document.getElementsByClassName("options_drop")[2].innerHTML = "";
-                        document.getElementsByClassName("options_drop")[3].innerHTML = "";
-                        document.getElementsByClassName("options_drop")[4].innerHTML = "";
-                        document.getElementsByClassName("options_drop")[5].innerHTML = "";
-                        document.getElementsByClassName("options_drop")[6].innerHTML = "";
+                        //document.getElementById("search_bar_results").style.display = "none";
                     }
                  }
             });
@@ -390,9 +386,8 @@
                 success: function (wine) {
                     if(wine.name){
                         document.getElementsByClassName("alert")[0].style.display = "none";
-                        document.getElementsByClassName("search__results")[0];
                         document.getElementById("search_bar_results").style.display = "block";
-                        document.getElementsByClassName("options")[0].innerHTML = "Variety: ";
+                        //document.getElementsByClassName("options")[0].innerHTML = "Variety: ";
                         document.getElementById("name").innerHTML = wine.name;
                         if(wine.country){
                             document.getElementById("country").innerHTML = wine.country;
@@ -433,20 +428,14 @@
                     }else{
                         document.getElementsByClassName("alert")[0].style.visibility = "visible";
                         document.getElementsByClassName("alert")[0].innerHTML = "There are no element you try to find. Please input another value";
-                        document.getElementById("name").innerHTML = "";
-                        document.getElementById("country").innerHTML = "";
-                        document.getElementById("designation").innerHTML = "";
-                        document.getElementById("province").innerHTML = "";
-                        document.getElementById("region").innerHTML = "";
-                        document.getElementById("winery").innerHTML = "";
-                        document.getElementById("description").innerHTML = "";
-                        document.getElementsByClassName("options")[0].innerHTML = "";
-                        document.getElementsByClassName("options")[1].innerHTML = "";
-                        document.getElementsByClassName("options")[2].innerHTML = "";
-                        document.getElementsByClassName("options")[3].innerHTML = "";
-                        document.getElementsByClassName("options")[4].innerHTML = "";
-                        document.getElementsByClassName("options")[5].innerHTML = "";
-                        document.getElementsByClassName("options")[6].innerHTML = "";
+                        document.getElementById("search_bar_results").style.display = "none";
+                        // document.getElementsByClassName("options")[0].innerHTML = "";
+                        // document.getElementsByClassName("options")[1].innerHTML = "";
+                        // document.getElementsByClassName("options")[2].innerHTML = "";
+                        // document.getElementsByClassName("options")[3].innerHTML = "";
+                        // document.getElementsByClassName("options")[4].innerHTML = "";
+                        // document.getElementsByClassName("options")[5].innerHTML = "";
+                        // document.getElementsByClassName("options")[6].innerHTML = "";
                     }
                 }
             });
@@ -455,7 +444,6 @@
         $("form").submit(function (e) {
             e.preventDefault();
             let name = this.elements["name"].value;
-            document.getElementById("search_bar_results").style.display = "block";
             GetData(name);
         });
     });
