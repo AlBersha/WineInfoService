@@ -139,10 +139,10 @@
                     <button class="map_text" id="piedmont">Piedmont</button>
                     <br> <img class="map_loc_italy" src="images/map-location.svg" alt="map-location" width="15">
                 </div>
-                <div class="map_container_nameBlock tuscany">
-                    <button class="map_text" id="tuscany">Tuscany</button>
-                    <br> <img class="map_loc_italy" src="images/map-location.svg" alt="map-location" width="15">
-                </div>
+<!--                <div class="map_container_nameBlock tuscany">-->
+<!--                    <button class="map_text" id="tuscany">Tuscany</button>-->
+<!--                    <br> <img class="map_loc_italy" src="images/map-location.svg" alt="map-location" width="15">-->
+<!--                </div>-->
                 <div class="map_container_nameBlock northeastern_italy">
                     <button class="map_text" id="northeastern_italy">Northeastern Italy</button>
                     <br> <img class="map_loc_italy" src="images/map-location.svg" alt="map-location" width="15">
@@ -288,6 +288,23 @@
             let id = $(this).attr('id');
             //console.log(id);
             let name = document.getElementById(id).innerHTML;
+            // name = name.toLocaleLowerCase();
+            // name = name.toLowerCase();
+            // let first = name.charAt(0);
+            // first = first.toUpperCase();
+            // name = name.substring(1, name.length);
+            // name = first + name;
+            //
+            // let num  = name.indexOf(" ");
+            // if(num){
+            //     let second = name.charAt(num+1);
+            //     second = second.toUpperCase();
+            //     let word = name.substring(num+2, name.length);
+            //     word = second + word;
+            //     name = name.substring(0, num);
+            //     name = name + word;
+            // }
+
             console.log(name);
 
             GetWine(name);
@@ -364,10 +381,26 @@
         $("p").click(function (e) {
             e.preventDefault();
             let id = $(this).attr('id');
-            let wine = document.getElementById(id).innerHTML;
+            let name = document.getElementById(id).innerHTML;
+            // name = name.toLocaleLowerCase();
+            // name = name.toLowerCase();
+            // let first = name.charAt(0);
+            // first = first.toUpperCase();
+            // name = name.substring(1, name.length);
+            // name = first + name;
+            //
+            // let num  = name.indexOf(" ");
+            // if(num){
+            //     let second = name.charAt(num+1);
+            //     second = second.toUpperCase();
+            //     let word = name.substring(num+2, name.length);
+            //     word = second + word;
+            //     name = name.substring(0, num);
+            //     name = name + " " + word;
+            // }
             //console.log(wine);
 
-            GetInfo(wine);
+            GetInfo(name);
         });
 
         function GetData(wineName) {
@@ -444,6 +477,26 @@
         $("form").submit(function (e) {
             e.preventDefault();
             let name = this.elements["name"].value;
+            // name = name.toLowerCase();
+            // let first = name.charAt(0);
+            // first = first.toUpperCase();
+            // name = name.substring(1, name.length);
+            // name = first + name;
+            //
+            // let num  = name.indexOf(" ");
+            // console.log(num);
+            //
+            // if(num){
+            //     let second = name.charAt(num+1);
+            //     second = second.toUpperCase();
+            //     console.log(second);
+            //     let word = name.substring(num+2, name.length);
+            //     word = second + word;
+            //     name = name.substring(2, num);
+            //     name = name + " " + word;
+            // }
+            // console.log(name);
+
             GetData(name);
         });
     });
