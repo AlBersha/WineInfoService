@@ -2,6 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
     <title>Wine | Info service</title>
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -11,7 +12,7 @@
 <body>
 
     <div class="intro">
-        <header>
+        <div class="header">
             <div class="img_for_drop_menu">
                 <button class="menu_button" onclick="openMenu()" onblur="closeMenu()"><img  src="images/menu-button-of-three-horizontal-lines.svg" alt="menu-button"></button>
             </div>
@@ -21,7 +22,7 @@
                     <input class="form-control search_bar-input" name="name" placeholder="Search.." />
                 </div>
             </form>
-            </header>
+        </div>
         <div class="menu_block">
             <nav class="drop_menu">
                 <a href="https://www.marieclaire.com/food-cocktails/news/a14159/how-to-choose-a-wine-non-expert/">How to pick  wine</a>
@@ -72,9 +73,13 @@
                 </div>
             </div>
         </div>
-        <a href="#secondSection" id="secondSection" class="move_down"><img src="images/move-down.svg" alt="move-down_arrow" width="50"></a>
+        <a onclick="scrollWin()" class="move_down"><img src="images/move-down.svg" alt="move-down_arrow" width="50"></a>
     </div>
 
+    <div class="mobile_intro" id="block">
+        <h1 >Cozy evening? <br>Wine is the best choice.</h1>
+        <p>Learn more about drink of Gods</p>
+    </div>
 
     <div class="content" >
         <div class="wrapper b-wrapper">
@@ -134,9 +139,9 @@
 
         <div class="searchByMap">
             <div class="map_container">
-                <img src="images/italy-map.png" alt="italy-map">
-                <div class="map_container_nameBlock piedmont">
-                    <button class="map_text" id="piedmont">Piedmont</button>
+                <img src="images/italy-map.png" class="map_image" alt="italy-map">
+                <div class="map_container_nameBlock piedmont" >
+                    <button class="map_text" id="piedmont" onclick="toResult()">Piedmont</button>
                     <br> <img class="map_loc_italy" src="images/map-location.svg" alt="map-location" width="15">
                 </div>
 <!--                <div class="map_container_nameBlock tuscany">-->
@@ -144,41 +149,41 @@
 <!--                    <br> <img class="map_loc_italy" src="images/map-location.svg" alt="map-location" width="15">-->
 <!--                </div>-->
                 <div class="map_container_nameBlock northeastern_italy">
-                    <button class="map_text" id="northeastern_italy">Northeastern Italy</button>
+                    <button class="map_text" id="northeastern_italy" onclick="toResult()">Northeastern Italy</button>
                     <br> <img class="map_loc_italy" src="images/map-location.svg" alt="map-location" width="15">
                 </div>
                 <img src="images/france-map.png" alt="france-map">
                 <div class="map_container_nameBlock burgundy">
-                    <button class="map_text" id="burgundy">Burgundy</button><br>
+                    <button class="map_text" id="burgundy" onclick="toResult()">Burgundy</button><br>
                     <img class="map_loc_italy" src="images/map-location.svg" alt="map-location" width="15">
                 </div>
                 <div class="map_container_nameBlock provence">
-                    <button class="map_text" id="provence">Provence</button>
+                    <button class="map_text" id="provence" onclick="toResult()">Provence</button>
                     <br> <img class="map_loc_italy" src="images/map-location.svg" alt="map-location" width="15">
                 </div>
                 <div class="map_container_nameBlock champagne">
-                    <button class="map_text" id="champagne">Champagne</button>
+                    <button class="map_text" id="champagne" onclick="toResult()">Champagne</button>
                     <br> <img class="map_loc_italy" src="images/map-location.svg" alt="map-location" width="15">
                 </div>
                 <div class="map_container_nameBlock loire_valley">
-                    <button class="map_text" id="loire_valley">Loire Valley</button>
+                    <button class="map_text" id="loire_valley" onclick="toResult()">Loire Valley</button>
                     <br> <img class="map_loc_italy" src="images/map-location.svg" alt="map-location" width="15">
                 </div>
                 <div class="map_container_nameBlock bordeaux">
-                    <button class="map_text" id="bordeaux">Bordeaux</button>
+                    <button class="map_text" id="bordeaux" onclick="toResult()">Bordeaux</button>
                     <br> <img class="map_loc_italy" src="images/map-location.svg" alt="map-location" width="15">
                 </div>
                 <img src="images/spain-map.png" alt="spain-map">
                 <div class="map_container_nameBlock сatalonia">
-                    <button  class="map_text" id="catalonia">Catalonia</button>
+                    <button  class="map_text" id="catalonia" onclick="toResult()">Catalonia</button>
                     <br> <img class="map_loc_italy" src="images/map-location.svg" alt="map-location" width="15">
                 </div>
                 <div class="map_container_nameBlock northern_spain">
-                    <button class="map_text" id="northern_spain">Northern Spain</button>
+                    <button class="map_text" id="northern_spain" onclick="toResult()">Northern Spain</button>
                     <br> <img class="map_loc_italy" src="images/map-location.svg" alt="map-location" width="15">
                 </div>
                 <div class="map_container_nameBlock andalucia">
-                    <button class="map_text" id="andalucia">Andalucia</button>
+                    <button class="map_text" id="andalucia" onclick="toResult()">Andalucia</button>
                     <br> <img class="map_loc_italy" src="images/map-location.svg" alt="map-location" width="15">
                 </div>
 
@@ -288,37 +293,9 @@
             let id = $(this).attr('id');
             //console.log(id);
             let name = document.getElementById(id).innerHTML;
-            // name = name.toLocaleLowerCase();
-            // name = name.toLowerCase();
-            // let first = name.charAt(0);
-            // first = first.toUpperCase();
-            // name = name.substring(1, name.length);
-            // name = first + name;
-            //
-            // let num  = name.indexOf(" ");
-            // if(num){
-            //     let second = name.charAt(num+1);
-            //     second = second.toUpperCase();
-            //     let word = name.substring(num+2, name.length);
-            //     word = second + word;
-            //     name = name.substring(0, num);
-            //     name = name + word;
-            // }
-
-            console.log(name);
 
             GetWine(name);
         });
-
-        // $("a").click(function (e) {
-        //     e.preventDefault();
-        //     let id = $(this).attr('id');
-        //     //console.log(id);
-        //     let name = document.getElementById(id).text;
-        //     console.log(name);
-        //
-        //     GetWine(name);
-        // });
 
         function GetInfo(wineName) {
             $.ajax({
@@ -382,23 +359,6 @@
             e.preventDefault();
             let id = $(this).attr('id');
             let name = document.getElementById(id).innerHTML;
-            // name = name.toLocaleLowerCase();
-            // name = name.toLowerCase();
-            // let first = name.charAt(0);
-            // first = first.toUpperCase();
-            // name = name.substring(1, name.length);
-            // name = first + name;
-            //
-            // let num  = name.indexOf(" ");
-            // if(num){
-            //     let second = name.charAt(num+1);
-            //     second = second.toUpperCase();
-            //     let word = name.substring(num+2, name.length);
-            //     word = second + word;
-            //     name = name.substring(0, num);
-            //     name = name + " " + word;
-            // }
-            //console.log(wine);
 
             GetInfo(name);
         });
@@ -477,25 +437,6 @@
         $("form").submit(function (e) {
             e.preventDefault();
             let name = this.elements["name"].value;
-            // name = name.toLowerCase();
-            // let first = name.charAt(0);
-            // first = first.toUpperCase();
-            // name = name.substring(1, name.length);
-            // name = first + name;
-            //
-            // let num  = name.indexOf(" ");
-            // console.log(num);
-            //
-            // if(num){
-            //     let second = name.charAt(num+1);
-            //     second = second.toUpperCase();
-            //     console.log(second);
-            //     let word = name.substring(num+2, name.length);
-            //     word = second + word;
-            //     name = name.substring(2, num);
-            //     name = name + " " + word;
-            // }
-            // console.log(name);
 
             GetData(name);
         });

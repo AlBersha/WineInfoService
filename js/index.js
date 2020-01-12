@@ -15,6 +15,10 @@ function scrollWin() {
     window.scrollTo(0, 600);
 }
 
+function toResult(){
+    window.scrollBy(0, 300);
+}
+
 $('.carousel').carousel({
     interval: 1800
 });
