@@ -278,14 +278,19 @@
   display: inline-block;
   position: absolute;
 }
-.map_container_nameBlock button {
+.map_container_nameBlock .btn_map {
   transition: 0.3s;
+}
+.map_container_nameBlock .btn_map:hover {
+  transition: 0.3s;
+  transform: translateZ(40px);
+}
+.map_container_nameBlock button {
   border: none;
   background: transparent;
   color: #7f0000;
 }
 .map_container_nameBlock button:hover {
-  transform: translateZ(40px);
   font-weight: bold;
 }
 .map_container_nameBlock button:focus {
@@ -293,7 +298,7 @@
 }
 
 .piedmont {
-  top: 12.5%;
+  top: 14%;
   left: 7vw;
 }
 
@@ -362,10 +367,7 @@ footer {
   display: flex;
   font-size: 18px;
   align-items: center;
-  justify-content: center;
-}
-.footer_content div {
-  padding-left: 260px;
+  justify-content: flex-end;
 }
 .footer_content a {
   padding: 6px;

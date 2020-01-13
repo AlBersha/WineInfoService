@@ -16,42 +16,25 @@
 .map_container_nameBlock
   display: inline-block
   position: absolute
-  button
+  .btn_map
     transition: 0.3s
+    &:hover
+      transition: 0.3s
+      transform: translateZ(40px)
+  button
     border: none
     background: transparent
     color: $darkRed
     &:hover
       //text-decoration: none
       //font-size: 26px
-      transform: translateZ(40px)
       font-weight: bold
     &:focus
       outline: none
 
-
-//.map_text
-//  transition: 0.3s
-//  border: none
-//  background: transparent
-//  color: $darkRed
-//  &:hover
-//    //text-decoration: none
-//    //font-size: 26px
-//    transform: translateZ(40px)
-//    font-weight: bold
-
 .piedmont
-  top: 12.5%
+  top: 14%
   left: 7vw
-
-//.venice
-//  top: 5%
-//  left: 11vw
-//
-//.tuscany
-//  top: 180px
-//  left: 200px
 
 .northeastern_italy
   top: 18%
